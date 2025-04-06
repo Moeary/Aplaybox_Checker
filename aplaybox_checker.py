@@ -18,7 +18,7 @@ def check_aplaybox():
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
 
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options, version_main=133)
     try:
         # Navigate to the target URL
         driver.get("https://www.aplaybox.com/details/model/xfyv7yIWHaxH")
