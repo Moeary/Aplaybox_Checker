@@ -1,51 +1,51 @@
-# Aplaybox Daily Checker
+# Aplaybox 每日检查器
 
-This project automates the daily login and check for the Aplaybox website at [Aplaybox Model Details](https://www.aplaybox.com/details/model/xfyv7yIWHaxH).
+该项目自动化完成 Aplaybox 网站的每日登录和检查，目标页面为 [Aplaybox 模型详情](https://www.aplaybox.com/details/model/xfyv7yIWHaxH)。
 
-## Features
-- Logs in daily using a stored cookie.
-- Checks the specified page and prints the page title.
-- Runs automatically via GitHub Actions.
+## 功能
+- 使用存储的 Cookie 每日登录。
+- 检查指定页面并打印页面标题。
+- 通过 GitHub Actions 自动运行。
 
-## Setup
+## 设置
 
-### Prerequisites
-- Python 3.x installed.
-- A valid cookie for the Aplaybox website.
+### 前置条件
+- 已安装 Python 3.x。
+- Aplaybox 网站的有效 Cookie。
 
-### Local Setup
-1. Clone the repository:
+### 本地设置
+1. 克隆此仓库：
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Moeary/Aplaybox_Checker
    cd Aplaybox_Checker
    ```
-2. Install dependencies:
+2. 安装依赖：
    ```bash
    python -m pip install --upgrade pip
    pip install undetected-chromedriver selenium
    ```
-3. Set the `APLAYBOX_COOKIE` environment variable:
+3. 设置 `APLAYBOX_COOKIE` 环境变量：
    ```bash
-   set APLAYBOX_COOKIE=your_cookie_string
+   set APLAYBOX_COOKIE=你的_cookie_字符串
    ```
-4. Run the script:
+4. 运行脚本：
    ```bash
    python aplaybox_checker.py
    ```
 
-### GitHub Actions Setup
-1. Fork this repository.
-2. Go to `Settings > Secrets and variables > Actions` in your GitHub repository.
-3. Add a new secret named `APLAYBOX_COOKIE` and paste your cookie string.
-4. The workflow will run daily at midnight UTC.
+### GitHub Actions 设置
+1. Fork 此仓库。
+2. 前往 GitHub 仓库的 `Settings > Secrets and variables > Actions`。
+3. 添加一个名为 `APLAYBOX_COOKIE` 的新密钥，并粘贴你的 Cookie 字符串。
+4. 工作流将每天在 UTC 时间午夜运行。
 
-## Files
-- `aplaybox_checker.py`: The main script for logging in and checking the page.
-- `.github/workflows/daily_check.yml`: The GitHub Actions workflow for automation.
+## 文件
+- `aplaybox_checker.py`：用于登录和检查页面的主脚本。
+- `.github/workflows/daily_check.yml`：用于自动化的 GitHub Actions 工作流。
 
-## Notes
-- Ensure your cookie is valid and updated regularly.
-- The script uses Selenium and undetected-chromedriver to bypass bot detection.
+## 注意事项
+- 确保你的 Cookie 有效并定期更新。
+- 脚本使用 Selenium 和 undetected-chromedriver 绕过机器人检测。
 
-## License
-This project is licensed under the MIT License.
+## 许可证
+本项目基于 MIT 许可证。
