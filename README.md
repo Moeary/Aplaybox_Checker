@@ -3,8 +3,7 @@
 该项目自动化完成 Aplaybox 网站的每日登录和检查，目标页面为 [Aplaybox 模型详情](https://www.aplaybox.com/details/model/xfyv7yIWHaxH)。
 
 ## 功能
-- 使用存储的 Cookie 每日登录。
-- 检查指定页面并打印页面标题。
+- 使用存储的 Cookie 每日登录+浏览作品获取10积分 半年过去能直升lv3.
 - 通过 GitHub Actions 自动运行。
 
 ## 设置
@@ -46,6 +45,3 @@
 ## 注意事项
 - 确保你的 Cookie 有效并定期更新。
 - 脚本使用 Selenium 和 undetected-chromedriver 绕过机器人检测。
-
-## 许可证
-本项目基于 MIT 许可证。

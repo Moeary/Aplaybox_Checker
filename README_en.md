@@ -46,6 +46,3 @@ This project automates the daily login and check for the Aplaybox website at [Ap
 ## Notes
 - Ensure your cookie is valid and updated regularly.
 - The script uses Selenium and undetected-chromedriver to bypass bot detection.
-
-## License
-This project is licensed under the MIT License.
